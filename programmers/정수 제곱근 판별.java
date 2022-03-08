@@ -11,3 +11,14 @@ class Solution {
     }
 
 }
+
+
+// 다른 버전
+// class Solution {
+//     public long solution(long n) {
+//         long num = (long)Math.sqrt(n);
+
+//         return (num * num == n) ? (num + 1) * (num + 1) : -1;
+//     }
+
+// }
