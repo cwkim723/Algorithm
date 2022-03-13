@@ -31,12 +31,8 @@ public class Main {
                 if(answer == arr[i]){
                     // 연속으로 맞은 경우
                     count++;
-                    sum += count;
-                } else {
-                    // 연속 X 경우
-                    count = 1;
-                    sum += count;
                 }
+                sum += count;
             } else {
                 // 틀린 경우 : count를 1로 초기화시킴
                 count = 1;
