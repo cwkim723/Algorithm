@@ -19,7 +19,6 @@ public class Main {
         int[] intArr = new int[people];
         double sum = 0;
         int count = 0;
-        double answer = 0;
 
         for(int i = 0; i < intArr.length; i++){
             intArr[i] = Integer.parseInt(arr[i+1]);
@@ -34,5 +33,4 @@ public class Main {
 
         System.out.println(String.format("%.3f", ((double)count/people) * 100) + "%");
     }
-
 }
