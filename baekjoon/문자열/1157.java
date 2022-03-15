@@ -18,9 +18,8 @@ public class Main {
             arr[i] = word.charAt(i);
             set.add(word.charAt(i));
         }
-        Arrays.sort(arr);
+        
         ArrayList<Character> list = new ArrayList<>(set);
-        Collections.sort(list);
         Map<Character, Integer> map = new HashMap<>();
 
         for(int i = 0; i < list.size(); i++){
