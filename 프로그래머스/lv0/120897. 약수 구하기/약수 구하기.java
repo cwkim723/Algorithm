@@ -8,8 +8,7 @@ class Solution {
                 list.add(i);
             }
         }
-        int answer[] = list.stream().mapToInt(Integer::intValue).toArray();
         
-        return answer;
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 }
