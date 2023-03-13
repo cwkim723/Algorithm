@@ -2,28 +2,24 @@ import java.util.*;
 
 class Solution {
     public String solution(String s) {
-        Map<String, String> map = new HashMap<>();
-        Map<String, String> strMap = new HashMap<>();
+        List<String> list = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
         
         for(int i = 0; i < s.length(); i++) {
             String str = String.valueOf(s.charAt(i));
             if(map.get(str) == null) {
-                map.put(str, str);
-                strMap.put(str, str);
+                map.put(str, 1);
             } else {
-                strMap.remove(str);
+                map.put(str, map.get(str) + 1);
             }
         }
-        String[] arr = new String[strMap.size()];
         
-        int index = 0;
-        for(String str : strMap.keySet()) {
-            arr[index] = str;
-            index++;
+        for(String key : map.keySet()) {
+            if(map.get(key) == 1) list.add(key);
         }
         
-        Arrays.sort(arr);
+        Collections.sort(list);
         
-        return String.join("", arr);
+        return String.join("", list);
     }
 }
