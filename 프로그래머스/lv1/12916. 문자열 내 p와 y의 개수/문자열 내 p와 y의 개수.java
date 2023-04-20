@@ -6,6 +6,6 @@ class Solution {
         pStr = pStr.replace("p", "");
         yStr = yStr.replace("y", "");
 
-        return pStr.length() == yStr.length() ? true : false;
+        return pStr.length() == yStr.length();
     }
 }
